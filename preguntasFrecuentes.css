@@ -1,0 +1,33 @@
+body {
+  background: rgb(0, 0, 0);
+  background-image: url(img/fondoComidas.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container-footer {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.p-items {
+  background: hsl(0, 0%, 80%);
+  border-radius: 5px;
+  margin: 10px;W3
+}
+.p-items > h3 {
+  color: rgb(167, 0, 0);
+}
+.imagen-items {
+  padding: 0 50%;
+  background: transparent;
+}
+
+.imagen-items img {
+  border-radius: 100px;
+  box-shadow: 0 0 10px #ff0, 0 0 40px #ff0, 0 0 80px #ff0;
+}
+.imagen-items img:hover {
+  transition: 0.5s;
+  transform: rotate(360deg);
+}

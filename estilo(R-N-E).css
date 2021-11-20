@@ -1,0 +1,459 @@
+* {
+  font-family: cursive;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/*General*/
+h2 {
+  color: rgb(0, 0, 197);
+  font-family: cursive;
+}
+h3 {
+  color: white;
+}
+h4 {
+  color: white;
+}
+header {
+  color: white;
+}
+.footer {
+  color: white;
+}
+/*imagen de Reserva*/
+.imgr {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 400px;
+}
+.imge {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+.titulo {
+  text-align: center;
+  width: 100%;
+}
+.titulo h1 {
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.titulo h1:hover {
+  padding: 10px;
+  color: rgb(112, 226, 255);
+  text-decoration: none;
+}
+/*Menú de Nosotros y Equipo*/
+.menuNE {
+  padding: 0;
+  background-color: white;
+  height: 65px;
+  margin: 10px auto;
+  text-align: center;
+  margin: 0 auto;
+}
+.menuNE a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  display: block;
+  color: black;
+  display: inline-block;
+  text-align: center;
+}
+.menuNE a:hover {
+  background: rgb(60, 232, 255);
+  padding: 12px;
+  box-shadow: 0 0 10px rgba(49, 245, 252, 0.658),
+    0 0 40px rgba(49, 245, 252, 0.658), 0 0 80px rgba(49, 245, 252, 0.658);
+  transition-duration: 500ms;
+}
+/*Contenido de Nosotros*/
+.pnosotros {
+  color: white;
+  line-height: 30px;
+}
+
+.contnos {
+  margin: 0 auto;
+}
+.contnos::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*Enlaces de Nosotros y Equipo*/
+.enlaces {
+  margin: 0 auto;
+}
+.enlaces::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  width: 100%;
+  float: left;
+}
+/*Contenido Equipo*/
+.tituloequi {
+  font-family: cursive;
+  color: rgba(252, 49, 252, 0.658);
+  box-shadow: 0 0 10px rgba(252, 49, 252, 0.658),
+    0 0 40px rgba(252, 49, 252, 0.658), 0 0 80px rgba(252, 49, 252, 0.658);
+  font-size: 45px;
+}
+.titulonos {
+  font-family: cursive;
+  color: rgb(255, 255, 255);
+  /* box-shadow: 0 0 10px rgba(49, 137, 252, 0.658), 0 0 40px  rgba(49, 137, 252, 0.658), 0 0 80px  rgba(49, 137, 252, 0.658); */
+  font-size: 45px;
+}
+.hequi {
+  font-family: cursive;
+  color: white;
+}
+.hequi:hover {
+  color: rgba(49, 220, 250, 0.938);
+}
+.conteq1 {
+  margin: 0 auto;
+  border-color: blue;
+  background: url("img/espacio.jpg") no-repeat;
+}
+.conteq1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.conteq1:hover {
+  border-color: black;
+  padding: 12px;
+  box-shadow: 0 0 10px rgba(252, 49, 252, 0.658),
+    0 0 40px rgba(252, 49, 252, 0.658), 0 0 80px rgba(252, 49, 252, 0.658);
+  transition-duration: 250ms;
+}
+.equ {
+  width: 200px;
+  height: 100%;
+  transition: 0.5s;
+  transform-origin: top;
+}
+.equ:hover {
+  width: 250px;
+  height: 100%;
+  background: url("img/4882066.jpg") no-repeat;
+  transform-origin: bottom;
+}
+
+/*Contenido Reserva*/
+.conter {
+  margin: 0 auto;
+  border-color: white;
+  color: white;
+  background: url("img/fondotabla.png") no-repeat;
+}
+.conter::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.tituloreser {
+  font-family: cursive;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.658),
+    0 0 40px rgba(255, 255, 255, 0.658), 0 0 80px rgba(255, 255, 255, 0.658);
+  font-size: 40px;
+  padding: 10px;
+}
+.tituloreser1 {
+  font-family: cursive;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.658),
+    0 0 40px rgba(255, 255, 255, 0.658), 0 0 80px rgba(255, 255, 255, 0.658);
+  padding: 10px;
+}
+.form {
+  color: #fed64f;
+}
+.fieldset {
+  color: #fed64f;
+}
+#formulario input[type="submit"]{
+  width:10%;
+  height: 50px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 10px;
+  text-align: center;
+  margin-right: 200px;
+}
+#formulario input[type="submit"]:hover{
+  background: #00008B;
+  color: white;
+}
+#formures input[type="submit"]{
+  width:10%;
+  height: 50px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 10px;
+  text-align: center;
+}
+#formures input[type="submit"]:hover{
+  background: #00008B;
+  color: white;
+}
+#regresar input[type="submit"]{
+  width:10%;
+  height: 50px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 900;
+  padding: 10px;
+  text-align: center;
+}
+#regresar input[type="submit"]:hover{
+  background: #00008B;
+  color: white;
+}
+#datosreserva {
+  color: rgb(233, 233, 233);
+  font-family: cursive;
+}
+/*dispositivo movil*/
+@media only screen and (min-width: 1px) {
+  html {
+    font-size: 14px;
+  }
+  .enlaces {
+    font-size: 14px;
+  }
+  [class*="col-s-"] {
+    padding: 0rem;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+/*dispositivo tabletas*/
+@media only screen and (min-width: 512px) {
+  html {
+    font-size: 14px;
+  }
+  .enlaces {
+    font-size: 14px;
+  }
+  [class*="col-m-"] {
+    padding: 0.5rem;
+  }
+  .conteq {
+    width: 90%;
+  }
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+
+/*dispositivo escritorio*/
+@media only screen and (min-width: 700px) {
+  html {
+    font-size: 16px;
+  }
+  .enlaces {
+    font-size: 19px;
+  }
+  .conteq {
+    width: 90%;
+  }
+  [class*="col-"] {
+    padding: 1rem;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  .col-13 {
+    width: 20%;
+  }
+}
+/* nuevo menu */
+
+/* celulares-Tablet */
+.menu {
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  list-style: none;
+  /* background: #0b0; */
+  display: none;
+}
+.menu li {
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  /* text-align: center; */
+}
+.menu li:last-child {
+  /* border: none; */
+}
+.menu a {
+  color: #000;
+  text-decoration: none;
+  line-height: 3;
+  display: block; /* para que aparezca el efecto hover en todo su caja */
+  padding-left: 1em;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.menu a:hover {
+  color: #da0606;
+}
+.menu li:hover {
+  /* background: rgb(0, 0, 0, 0.2); FONDO LISTA */
+}
+/* ESCRITORIO */
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+  li {
+    text-align: center;
+    border-right: 1px solid rgb(0, 0, 0, 0.2);
+    flex: auto;
+  }
+
+  .menu a {
+    padding-left: 0;
+  }
+  #toggle-menu {
+    /* display: none; ocultar cuando es escritorio*/
+  }
+}
+
+#toggle-menu {
+  line-height: 2.5;
+  color: #fff;
+  padding-left: 1em;
+  cursor: cell;
+}
+
+#toggle-menu:hover {
+  color: rgb(112, 226, 255);
+}
+
+.toggle-menu {
+  text-align: center;
+}
+

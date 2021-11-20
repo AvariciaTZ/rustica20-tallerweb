@@ -1,0 +1,621 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  }
+  
+
+/* PRESENTACION */
+html{
+  min-height: 100%;
+}
+body{
+  font-family:  cursive;
+  background-color: #5dd;
+}
+/* titulo */
+.titulo{
+  background-color: rgb(3,3,3);
+  text-align: center;
+}
+.titulo h1{
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-decoration: none;
+  transition: color .5s;
+}
+.titulo h1:hover{
+  padding: 10px;
+  color: rgb(225, 225, 60);
+  text-decoration: none;
+  background-color: black;
+}
+
+/* imagenes */
+
+.imagen-container{
+  background: #3eaaaa;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* dimencion img */
+.imagen{ 
+  min-width: 180px;
+  max-width: 270px; 
+  height:270px; 
+  transition: all 500ms ease-out;
+}
+/* para que se ponga en fila */
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+
+  
+  /* responsive categorias pizza,pasta,piqueos */
+  min-width: 900px;
+}
+.box{
+  min-width: 180px;
+  max-width: 270px; 
+  height:270px; 
+
+  position: relative;
+
+  overflow: hidden;
+  margin: 20px;
+  border:3px solid #fff;
+
+}
+.container .box .imagen{
+  object-fit: cover;
+
+}
+.capa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: 0.3s ease;
+  color: rgb(248, 246, 246);
+
+}
+.box:hover .capa{
+
+  transform: scale(1);
+}
+.imagen-container .container{
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.5);
+  cursor: cell;
+  width: 100%;
+  height: 300px;
+} 
+.container .box:hover>img{
+  transform: scale(1.12);
+}       
+.banner-container{
+  text-align: center;
+
+}
+.banner{
+  width: 100%;
+  
+  /* responsive banner */
+  min-width: 1050px;
+}
+table{
+  border: 1px solid #343434;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #F9E79F;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+
+
+
+/* celulares-Tablet */
+.menu {
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  list-style: none;
+  /* background: #0b0; */
+  display: none;
+}
+.menu li {
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  /* text-align: center; */
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+  line-height: 3;
+  display: block; /* para que aparezca el efecto hover en todo su caja */
+  padding-left: 1em;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.menu a:hover {
+  color: #da0606;
+}
+.fila {
+  width: 100%;
+}
+#toggle-menu {
+  background: rgb(0, 0, 0);
+  line-height: 2.5;
+  color: #fff;
+  padding-left: 1em;
+  cursor: cell;
+}
+
+#toggle-menu:hover {
+  color: #ff0;
+}
+
+.toggle-menu {
+  text-align: center;
+}
+
+h2{
+  background: whitesmoke;
+}
+
+.container-slider{
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 0 0 10px #fff,
+              0 15px 50px;
+  position: relative;
+}
+
+
+.slider__section{
+  width: 100%;
+}
+
+.slider__img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.slider__btn{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgb(255, 255, 255,0.7);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__btn:hover{
+  background: whitesmoke;
+}
+
+.slider__btn--left{
+  left: 10px;
+}
+
+.slider__btn--right{
+  right: 10px;
+}
+
+
+  
+
+
+input[type="button"]{
+  background: #e62b5a;
+  color: #fff;
+}
+input[type="reset"]{
+  background: #e62b5a;
+  color: #fff;
+}
+input[type="reset"]:hover{
+  background-color: black;
+  color: whitesmoke;
+  transition-duration: 1s;
+}
+input[type="button"]:hover{
+  background-color: black;
+  color: whitesmoke;
+  transition-duration: 1s;
+}
+#finish{
+  display: none;
+  margin: 16px 0;
+  background: #10ff62;
+  color: #000;
+  width: 90%;
+}
+        
+.info{
+  border: black 2px solid;
+  background-color: #F9E79F;
+  color:black;
+  display: auto;
+}
+    
+
+
+@media only screen and (min-width: 1px) {
+  html {
+    font-size: 12px;
+  }
+
+    [class*="muestra"] {
+      padding: 0rem;
+    }
+    [class*="col-s-"] {
+      padding: 0rem;
+    }
+    .banner {
+      /* responsive banner */
+      min-width: 200px;
+    }
+    
+  
+  form{
+    border: 1px solid #343434;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #F9E79F;
+    font-weight: bold;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: auto;
+  }
+  
+  .info{
+    border: black 2px solid;
+    background-color: #F9E79F;
+    color:black;
+    display: auto;
+    width: auto;
+    height: auto;
+    
+  }
+  table{
+      border: 1px solid #F9E79F;
+      border-radius: 0px;
+      padding: 10px 20px;
+      background-color: #F9E79F;
+      font-weight: bold;
+      margin: 0 auto;
+  }
+  .slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+  }
+  .muestra {
+      display: flex;
+      justify-content: center;
+      width: auto;
+      height: auto;
+    }
+    input[type=button]{
+      background-color: bisque;
+      color:black;
+      padding: 10px 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+      margin-left: 120px;
+  }
+  input[type=reset]{
+    background-color: bisque;
+    color:black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 125px;
+}
+  
+  .boton{
+      display: flex;
+  }
+
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  .fila {
+    width: 100%;
+  }
+  .titulo {
+    width: auto;
+  }
+  
+  [class*="titulo"] {
+      padding: 0rem;
+  }
+  [class*="menu"] {
+        padding: 0rem;
+  }
+  [class*="muestra"] {
+        padding:1rem;
+  }
+  
+  .slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+  }
+  input[type=button]{
+    background-color: bisque;
+    color:black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 220px;
+}
+
+  .muestra{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 135px;
+    background-color: #F9E79F;
+    font-weight: bold;
+    margin: 0px auto;
+      }
+
+        
+.Pedido{
+    
+        border: 2px solid black;
+        border-radius: px;
+        padding: 10px 20px;
+        background-color: #F9E79F;
+        font-weight: bold;
+        width: auto;
+        max-width: 559px;
+        margin: 0 auto; 
+    
+}   
+
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 992px){
+  html {
+    font-size: 16px;
+  }
+  .fila {
+    width: 100%;
+  }
+  .banner {
+    /* responsive banner */
+    /*   min-width: 65rem; */
+    min-width: 992px;
+    width: 100% !important;
+  }
+  [class*="titulo"] {
+      padding: 0rem;
+  }
+  [class*="menu"] {
+        padding: 0rem;
+  }
+  [class*="muestra"] {
+        padding: 0rem;
+  }
+  .banner {
+    /* responsive banner */
+    /*   min-width: 65rem; */
+    min-width: 992px;
+    width: 100% !important;
+  }
+  .titulo {
+    width: auto;
+  }
+  .slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+  }
+  .muestra{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: #F9E79F;
+    font-weight: bold;
+    margin: 0 auto;
+      }
+
+      
+      
+      form{
+        border: 5px solid #343434;
+        border-radius: 15px;
+        padding: 30px 30px;
+        background-color: #F9E79F;
+        font-weight: bold;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      table{
+        border: 1px solid #bdad6f;
+        border-radius: 0px;
+        padding: 20px 25px;
+        background-color: #F9E79F;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+  .menu {
+        padding-left: 0;
+        margin-top: 10px;
+        margin-bottom: 0;
+        list-style: none;
+        /* background: #0b0; */
+        display: none;
+    }
+      .menu li {
+        border: 1px solid rgb(0, 0, 0, 0.2);
+        border-radius: 50px;
+        background-color: rgb(255, 255, 255);
+        /* text-align: center; */
+      }
+  .menu a {
+        color: #000;
+        text-decoration: none;
+        line-height: 3;
+        display: block; /* para que aparezca el efecto hover en todo su caja */
+        padding-left: 1em;
+        font-weight: bold;
+        font-size: 0.9em;
+      }
+  .menu a:hover {
+        color: #da0606;
+      }
+        
+.Pedido{
+    
+        border: 2px solid black;
+        border-radius: px;
+        padding: 10px 20px;
+        background-color: #F9E79F;
+        font-weight: bold;
+        width: 80%;
+        max-width: 559px;
+        margin: 0 auto; 
+    
+}  
+
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+  li {
+    text-align: center;
+    border-right: 1px solid rgb(0, 0, 0, 0.2);
+    flex: auto;
+  }
+  
+  .slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%; 
+  }
+  .menu a {
+    padding-left: 0;
+  }
+
+}
