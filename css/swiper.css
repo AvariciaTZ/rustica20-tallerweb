@@ -1,0 +1,54 @@
+.swiper-container {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 70vh;
+  background: #111;
+  border-top: 20px solid #666;
+  border-bottom: 10px solid #666;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0006);
+}
+
+.swiper-slide img {
+  height: 100%;
+  width: 100%;
+  animation: categorias 3s linear infinite; /*7s*/
+}
+@keyframes categorias {
+  0% {
+    opacity: 1;
+    filter: hue-rotate(0deg);
+    filter: hue-rotate(20deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    filter: hue-rotate(20deg);
+  }
+}
